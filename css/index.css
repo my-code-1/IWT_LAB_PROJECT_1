@@ -16,7 +16,7 @@
 }
 .box{
     position: relative;
-    background: repeating-conic-gradient(from var(--a), #cc4d77 0%, #d84677 5%,transparent 5%,transparent 20%,#d76280 50%);
+    background: repeating-conic-gradient(from var(--a), #efdae1 0%, #f1e2e7 5%,transparent 5%,transparent 20%,#eedce1 50%);
     animation: animate 4s linear infinite;
     border-radius: 20px;
 }
@@ -53,7 +53,19 @@
     position: absolute;
     inset:8px;
     border-radius: 15px;
-    border: 1px solid #25252b;
+    
 
 
+}
+.box1{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 100px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-align: center;
+    background: linear-gradient(135deg,#ff00d2,
+    #fed90f,#00a2ff,#09f1b8,#ff00d2,
+    #fed90f,#00a2ff,#09f1b8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

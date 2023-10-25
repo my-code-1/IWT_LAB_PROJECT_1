@@ -34,10 +34,12 @@ function commonShareHandle(event)
         if (total>0) {
         
                purchaseButton.disabled = false; // Enable the button
+               
                document.getElementById('go-button').addEventListener('click',function(){
                 location.href="http://127.0.0.1:5500/index.html";
                 
                });
+               
                
                 
                 
