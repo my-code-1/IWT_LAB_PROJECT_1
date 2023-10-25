@@ -1,0 +1,59 @@
+.animated-text {
+    font-size: 24px;
+    animation: textAnimation 3s ease infinite;
+}
+
+@keyframes textAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.box{
+    position: relative;
+    background: repeating-conic-gradient(from var(--a), #cc4d77 0%, #d84677 5%,transparent 5%,transparent 20%,#d76280 50%);
+    animation: animate 4s linear infinite;
+    border-radius: 20px;
+}
+@property --a
+{
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0;
+}
+@keyframes animate
+{
+    0%
+    {
+      --a:0deg;
+    }
+    100%
+    {
+      --a:90deg;
+    }
+}
+.box::before
+{
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: animate 4s linear infinite;
+    animation-delay: -1s;
+    border-radius: 20px;
+}
+.box::after
+{
+    content: '';
+    position: absolute;
+    inset:8px;
+    border-radius: 15px;
+    border: 1px solid #25252b;
+
+
+}
