@@ -1,3 +1,4 @@
+
 .animated-text {
     font-size: 24px;
     animation: textAnimation 3s ease infinite;
@@ -64,8 +65,20 @@
     letter-spacing: 1px;
     text-align: center;
     background: linear-gradient(135deg,#ff00d2,
-    #fed90f,#00a2ff,#09f1b8,#ff00d2,
-    #fed90f,#00a2ff,#09f1b8);
+    #fed90f,#00a2ff,#26c276,#ff00d2,
+    #fed90f,#00a2ff,#6ad6bb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.box2{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 100px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-align: center;
+    background: linear-gradient(135deg,#ed7bba,
+    #f6f6f5,#e1e3e5,#cededa,#e8cde3,
+    #f1eedf,#d9e3e8,#d5e1df);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
