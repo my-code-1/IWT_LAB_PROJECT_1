@@ -17,7 +17,7 @@
 .box{
     position: relative;
     background: repeating-conic-gradient(from var(--a), #efdae1 0%, #f1e2e7 5%,transparent 5%,transparent 20%,#eedce1 50%);
-    animation: animate 4s linear infinite;
+    animation: animate 3s linear infinite;
     border-radius: 20px;
 }
 @property --a
